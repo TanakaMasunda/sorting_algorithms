@@ -9,7 +9,7 @@
 int len_list(listint_t *h)
 {
 	int len = 0;
-	
+
 	while (h)
 	{
 		len++;
@@ -27,12 +27,12 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *curr = NULL, *one = NULL;
 	listint_t *two = NULL, *three = NULL, *four = NULL;
-	
+
 	if (!list || !(*list) || len_list(*list) < 2)
 		return;
-	
+
 	curr = *list;
-	
+
 	while (curr)
 	{
 		if (curr->prev && curr->n < curr->prev->n)
@@ -41,7 +41,7 @@ void insertion_sort_list(listint_t **list)
 			two = curr->prev;
 			three = curr;
 			four = curr->next;
-			
+
 			two->next = four;
 			if (four)
 				four->prev = two;

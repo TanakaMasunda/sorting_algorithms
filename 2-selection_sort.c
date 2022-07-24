@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * selection_sort - sorts an array of integers following the selection sort algorithm
+ * selection_sort - sorts an array of integrs after th selction sort algorithm
  * @array: array to be sorted using the sort algorithm
  * @size: size of the array;
  */
@@ -9,12 +9,12 @@
 void selection_sort(int *array, size_t size)
 {
 	unsigned int i, j, min;
-	
+
 	register int tmp;
-	
+
 	if (size < 2)
 		return;
-	
+
 	for (i = 0; i < size; i++)
 	{
 		min = i;
